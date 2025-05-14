@@ -1,0 +1,5 @@
+pymongo
+pyspark==3.3.0
+pandas
+numpy
+kafka-python

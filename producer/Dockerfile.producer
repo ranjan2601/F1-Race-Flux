@@ -1,0 +1,12 @@
+FROM python:3.9
+
+WORKDIR /app
+
+# Install required packages
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY f1_data_producer.py .
+
+# Run the producer
+CMD ["python", "f1_data_producer.py"]
